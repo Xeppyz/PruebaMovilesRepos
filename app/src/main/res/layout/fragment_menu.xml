@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MenuFragment">
+
+        <TextView
+            android:id="@+id/etMenu"
+            android:textAlignment="center"
+            android:text="M E N U"
+            android:textSize="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.216"
+            />
+
+        <Button
+            android:id="@+id/btnEj1"
+            android:backgroundTint="@color/teal_700"
+            android:hint="Ejercicio 1"
+            app:cornerRadius="25dp"
+            android:textColorHint="@color/black"
+            android:layout_marginHorizontal="100dp"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/etMenu"
+            android:layout_marginTop="50dp"
+            />
+        <Button
+            android:id="@+id/btnEj2"
+            android:backgroundTint="@color/teal_700"
+            android:hint="Ejercicio 2"
+            app:cornerRadius="25dp"
+            android:textColorHint="@color/black"
+            android:layout_marginHorizontal="100dp"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btnEj1"
+            android:layout_marginTop="50dp"
+            />
+
+        <Button
+            android:id="@+id/btnEj3"
+            android:backgroundTint="@color/teal_700"
+            android:hint="Ejercicio 3"
+            app:cornerRadius="25dp"
+            android:textColorHint="@color/black"
+            android:layout_marginHorizontal="100dp"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btnEj2"
+            android:layout_marginTop="50dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

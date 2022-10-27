@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ni.edu.uca.nav_allan_silva.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="ni.edu.uca.nav_allan_silva.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_ejeunoFragment"
+            app:destination="@id/ejeunoFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_ejedosFragment"
+            app:destination="@id/ejedosFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_ejetresFragment"
+            app:destination="@id/ejetresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejeunoFragment"
+        android:name="ni.edu.uca.nav_allan_silva.EjeunoFragment"
+        android:label="fragment_ejeuno"
+        tools:layout="@layout/fragment_ejeuno" />
+    <fragment
+        android:id="@+id/ejedosFragment"
+        android:name="ni.edu.uca.nav_allan_silva.EjedosFragment"
+        android:label="EjedosFragment" />
+    <fragment
+        android:id="@+id/ejetresFragment"
+        android:name="ni.edu.uca.nav_allan_silva.EjetresFragment"
+        android:label="fragment_ejetres"
+        tools:layout="@layout/fragment_ejetres" />
+</navigation>

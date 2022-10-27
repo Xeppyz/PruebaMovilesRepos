@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       tools:context=".EjeunoFragment"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/tvModa"
+          android:text="MODA"
+          android:textSize="30dp"
+          android:textAlignment="center"
+          android:layout_marginHorizontal="100dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginBottom="300dp"
+          />
+
+
+
+      <EditText
+          android:id="@+id/etModa"
+          android:hint="Digite un numero"
+          android:textAlignment="center"
+          android:layout_marginHorizontal="100dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/tvModa"
+          />
+      <EditText
+          android:id="@+id/etModa2"
+          android:hint="Digite un numero"
+          android:textAlignment="center"
+          android:layout_marginHorizontal="100dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/etModa"
+          />
+      <EditText
+          android:id="@+id/etModa3"
+          android:hint="Digite un numero"
+          android:textAlignment="center"
+          android:layout_marginHorizontal="100dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/etModa2"
+          />
+      <EditText
+          android:id="@+id/etModa4"
+          android:hint="Digite un numero"
+          android:textAlignment="center"
+          android:layout_marginHorizontal="100dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/etModa3"
+          />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:text="Respuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etModa4"
+       />
+
+      <Button
+          android:id="@+id/btnCubo"
+          android:hint="Calcular"
+          android:textColorHint="@color/white"
+          android:backgroundTint="@color/teal_700"
+          android:layout_marginHorizontal="100dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/tvRes"
+          android:layout_marginTop="30dp"
+
+
+          />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
